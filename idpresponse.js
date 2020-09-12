@@ -3,7 +3,7 @@
 
   function sendAuthToken() {
     const credential = {id_token: 'hello jetex'};
-    window.opener.postMessage({credential}, location.origin);
+    window.opener.postMessage({credential});
     window.close();
   }
 })(globalThis);
