@@ -2,7 +2,7 @@
   window.addEventListener('load', sendAuthToken);
 
   function sendAuthToken() {
-    const credential = Object.fromEntries(location.hash.substr(1).split('&').map(o => o.split('=')));
+    const credential = {id_token: 'hello jetex'};
     window.opener.postMessage({credential}, location.origin);
     window.close();
   }
